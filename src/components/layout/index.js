@@ -33,11 +33,15 @@ const Layout = () => {
 	useLocale()
 
 	const AppLayout = useMemo(() => {
-		if (authenticated) {
+
+		if (authenticated && true) {
+			console.log('authenticated')
 			return layouts[layoutType]
 		}
-		return lazy(() => import('./AuthLayout'))
+		return layouts[layoutType]
+		// return React.lazy(() => import('./AuthLayout'))
 	}, [layoutType, authenticated])
+
 
 	return (
 		<Suspense 
@@ -53,3 +57,15 @@ const Layout = () => {
 }
 
 export default memo(Layout)
+
+
+
+
+
+
+
+
+
+
+
+

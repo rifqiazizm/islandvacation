@@ -28,7 +28,7 @@ const Home = () => {
 		
 
 	return (
-		<div className='container'>
+		<div className='p-10 m-0'>
 			<Alert title="My Project" rounded type="success">
 				All of these projects are designed and developed by me, there were no other devs were involved
 			</Alert>

@@ -6,6 +6,12 @@ import useAuth from 'utils/hooks/useAuth'
 
 
 
+
+
+
+
+
+
 const { unAuthenticatedEntryPath } = appConfig
 
 const ProtectedRoute = () => {

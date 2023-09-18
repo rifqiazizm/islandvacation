@@ -5,22 +5,23 @@ export const publicRoutes = [
     ...authRoute,
     {
         key: 'porto',
-        path: '/home',
+        path: '/porto',
         component: React.lazy(() => import('views/Porto')),
         meta: {
             layout: 'simple',
             header: 'Helloworld',
         }
-    }
-]
-
-export const protectedRoutes = [
+    },
     {
         key: 'home',
         path: '/home',
         component: React.lazy(() => import('views/Home')),
         authority: ['admin'],
     },
+]
+
+export const protectedRoutes = [
+    
     {
         key: 'test',
         path: '/test',
@@ -37,3 +38,6 @@ export const protectedRoutes = [
 
    
 ]
+
+
+

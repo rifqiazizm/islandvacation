@@ -6,6 +6,7 @@ import HeaderLogo from 'components/template/HeaderLogo'
 import MobileNav from 'components/template/MobileNav'
 import HorizontalNav from 'components/template/HorizontalNav'
 import View from 'views'
+import Logo from 'components/template/Logo'
 
 const HeaderActionsStart = () => {
 	return (
@@ -19,7 +20,6 @@ const HeaderActionsStart = () => {
 const HeaderActionsEnd = () => {
 	return (
 		<>
-			<SidePanel />
 			<UserDropdown hoverable={false} />
 		</>
 	)
@@ -36,6 +36,7 @@ const SimpleLayout = () => {
 						headerStart={<HeaderActionsStart />}
 						headerMiddle={<HorizontalNav />}
 						headerEnd={<HeaderActionsEnd />} 
+						logo={<Logo />}
 					/>
 					<View pageContainerType="contained" />
 				</div>

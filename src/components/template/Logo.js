@@ -27,11 +27,15 @@ const Logo = props => {
 				}
 			}
 		>
-			<img 
-				className={imgClass} 
-				src={`${LOGO_SRC_PATH}logo-${mode}-${type}.png`} 
-				alt={`${APP_NAME} logo`}
-			/>
+			<span className='flex flex-row justify-center items-center' >
+
+				<h4 className='text-2xl font-sans' >
+					Island
+				</h4>
+				<h3 className=' font-sans text-3xl text-violet-900' >
+					Vacation
+				</h3>
+			</span>
 		</div>
 	)
 }
