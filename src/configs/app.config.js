@@ -1,7 +1,7 @@
 const appConfig = {
     apiPrefix: '/api',
     authenticatedEntryPath: '/user',
-    unAuthenticatedEntryPath: '/home',
+    unAuthenticatedEntryPath: '/porto',
     tourPath: '/welcome',
     enableMock: false
 }
