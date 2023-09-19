@@ -39,7 +39,7 @@ function Best({image,title,des}) {
 
     
     const CardHeader = ({gambar}) => (
-        <div className=' w-full relative h-[30vh] border  rounded-tl-lg rounded-tr-lg ' style={{
+        <div className=' w-full relative h-[15rem] border  rounded-tl-lg rounded-tr-lg ' style={{
             backgroundImage : `url(${gambar})`,
             backgroundSize: 'cover'
         }} >
@@ -59,7 +59,7 @@ function Best({image,title,des}) {
                 header={<CardHeader gambar={image} />}
                 headerClass='p-0'
                 headerBorder={false}
-                className='w-auto h-[55vh] overflow-clip shadow-xl'
+                className='w-auto h-[30rem] overflow-clip shadow-xl'
                 
             >
                 <h2 className='font-sans text-xl text-left my-2'>
