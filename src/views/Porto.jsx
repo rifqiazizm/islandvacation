@@ -6,6 +6,10 @@ import { useEffect } from 'react'
 import useResponsive from 'utils/hooks/useResponsive' 
 import Cat,{category} from './porto/Cat'
 import _ from 'lodash'
+import Best, {terbaik} from './porto/Best'
+import Video from 'assets/images/Header.mp4'
+
+
 
 
 function Porto() {
@@ -53,23 +57,30 @@ function Porto() {
 
   return (
     <>
-      <div className='landing__header p-10 w-full h-[100vh] relative mb-20 border border-red-600 '>
+      <div className='landing__header p-0 w-full h-[70vh] lg:h-[100vh] relative mb-20 border '>
           <div className="imageHeader absolute left-0 top-0 w-screen h-[100vh] -z-10  " style={
             {
-              backgroundImage: `url(${Header})`,
-              backgroundSize : 'cover',
+              // backgroundImage: `url(${Header})`,
+              // backgroundSize : 'cover',
               clipPath : `circle(${style.width}% at 25% -70%)`
             }
           }>
-              <div className="transparent w-full h-[100vh] opacity-[0.8]  
+            <div className="transparent w-full h-[100vh] opacity-[0.8]  
                  bg-gradient-to-r from-[#100d18dd] from-80% to-[#1519209f] to-90% z-[5]  ">
 
               </div>
+              <video autoPlay loop muted className='m-0 w-full h-full z-[7] ' src={Video}>
+
+              </video>
+          
+              
+              
           
         
           </div>
+          
 
-          <div className="textHeader z-[6] absolute top-44 md:top-1/2 -translate-y-1/2 left-10 w-1/2 md:w-5/12">
+          <div className="textHeader z-[10] absolute top-44 md:top-1/2 -translate-y-1/2 left-10 w-1/2 md:w-5/12">
                 {/* <AnimationOnScroll animateIn="animate__fadeIn" initiallyVisible > */}
                     <h2 className="font-sans  text-5xl text-white text-left lg:text-7xl ">
                     Temukan Penginapan Terbaikmu
@@ -87,7 +98,7 @@ function Porto() {
           
 
       </div>
-      <div className="w-full h-[50vh] border border-black p-16 flex flex-col justify-start items-stretch">
+      <div className="w-full h-[50vh] border  p-16 flex flex-col justify-start items-stretch">
           <h4 className='text-2xl my-2 font-semibold  font-sans '>
             Cari Kategori
           </h4>
@@ -108,8 +119,21 @@ function Porto() {
 
 
       </div>
-      <div className='rating w-full h-screen'>
-        
+      <div className='rating w-full h-[50vh] my-12 p-16 flex flex-col justify-start items-stretch '>
+        <h4 className='text-2xl my-2 font-semibold  font-sans '>
+            Penginapan Terbaik
+          </h4>
+          <p className='font-sans text-xl'>
+            lihat penginapan terbaik di sekitarmu 
+          </p>
+        <div className='my-20 h-[50vh] flex justify-start items-stretch gap-6  ' > 
+          {
+            _.map(terbaik,(e) => (
+              <Best image={e.img} title={e.title} des={e.des} />
+            ))
+          }
+
+        </div>
 
       </div>
     </>

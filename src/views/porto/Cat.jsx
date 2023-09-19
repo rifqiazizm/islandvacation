@@ -28,15 +28,19 @@ function Cat({img,title}) {
 
 
   return (
-    <div className='w-56 h-28  lg:w-96 lg:h-36 p-3 rounded-lg  shadow-xl  flex justify-center items-center ' style={{
+            <div className='w-56 h-28  lg:w-96 lg:h-36 p-0 rounded-lg relative  shadow-2xl hover:cursor-pointer hover:scale-110 transition duration-500 ease-in-out ' style={{
                 backgroundImage : `url(${img})`,
                 backgroundSize: 'cover'
               }}>
-                  <h2 className='font-sans text-white'>
+                <div className='w-full h-full rounded-lg p-3 m-0 bg-teal-800 opacity-40 absolute  '>
+
+                  
+                </div>
+                <h2 className='font-sans text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 '>
                     {title}
                   </h2>
 
-    </div>
+            </div>
   )
 }
 

@@ -32,9 +32,9 @@ const Logo = props => {
 				<h4 className='text-2xl font-sans' >
 					Island
 				</h4>
-				<h3 className=' font-sans text-3xl text-violet-900' >
+				<h4 className=' font-sans text-3xl text-teal-700' >
 					Vacation
-				</h3>
+				</h4>
 			</span>
 		</div>
 	)
