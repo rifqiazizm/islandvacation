@@ -17,26 +17,7 @@ const navigationConfig = [
 		authority: [],
         subMenu: []
     },
-	{
-        key: 'Project List',
-		path: '/projects',
-		title: 'Project',
-		icon: 'home',
-		type: NAV_ITEM_TYPE_ITEM,
-		authority: [],
-        subMenu: []
-    },
-	{
-		key: 'Portfolio',
-		path: '/porto',
-		title: 'Portfolio',
-		icon: 'user',
-		type: NAV_ITEM_TYPE_ITEM,
-		authority: [],
-        subMenu: []
-
-
-	}
+	
 ]
 
 export default navigationConfig
