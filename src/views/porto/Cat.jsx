@@ -1,21 +1,37 @@
 import React from 'react'
-import Villa from 'assets/images/villa.jpg'
-import Apart from 'assets/images/apart.jpg'
-import Hotel from 'assets/images/hotel.jpg'
+import Kolam from 'assets/images/kolam.jpg'
+import Billiard from 'assets/images/billiard.jpg'
+import Bathub from 'assets/images/bathub.jpg'
+import Bed from 'assets/images/bed.jpg'
+import Family from 'assets/images/familyroom.jpg'
+import Kitchen from 'assets/images/kitchen.jpg'
+import Gym from 'assets/images/minigym.jpg'
 
 
 export const category = [
     {
-        img: Apart,
-        title: 'Apartment'
+        img: Kolam,
+        title: 'Kolam'
     },
     {
-        img: Villa,
-        title: 'Villa'
+        img: Bathub,
+        title: 'Bathub'
     },
     {
-        img: Hotel,
-        title: 'Hotel'
+        img: Kitchen,
+        title: 'Full Set kitchen'
+    },
+    {
+        img: Billiard,
+        title: 'Billiard'
+    },
+    {
+        img: Family,
+        title: 'Family Room'
+    },
+    {
+        img: Gym,
+        title: 'Mini Gym'
     }
 
 ]
@@ -36,7 +52,7 @@ function Cat({img,title}) {
 
                   
                 </div>
-                <h2 className='font-sans text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 '>
+                <h2 className='font-sans text-white absolute top-1/2 left-1/2 text-center -translate-x-1/2 -translate-y-1/2 '>
                     {title}
                   </h2>
 

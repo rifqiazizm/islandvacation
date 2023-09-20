@@ -96,15 +96,15 @@ function Porto() {
           
 
       </div>
-      <div className="w-full h-[50vh]   p-16 flex flex-col justify-start items-stretch">
+      <div className="w-full h-[30rem]   p-16 flex flex-col justify-start items-stretch">
           <h4 className='text-2xl my-2 font-semibold  font-sans '>
-            Cari Kategori
+            Cari Fasilitas
           </h4>
           <p className='font-sans text-xl'>
-            Cari kebutuhanmu sesuai kategori pilihanmu
+            Cari Fasilitas yang sesuai seleramu 
           </p>
           
-          <div className='w-full h-1/4 py-10 flex gap-10  flex-row justify-between items-stretch' >
+          <div className='w-full h-1/4 py-10 flex flex-wrap gap-10  flex-row justify-between items-stretch' >
               
           {
             _.map(category,(e) => (
