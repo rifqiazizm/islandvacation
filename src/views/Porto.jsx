@@ -244,23 +244,7 @@ function Porto() {
 
       </div>
 
-      <div className=' w-full h-min my-10 p-16 flex flex-col justify-start items-stretch  '>
-          <h4 className='text-2xl my-2 font-semibold  font-sans '>
-                Villa Terdekat
-          </h4>
-          <p className='font-sans text-xl'>
-            lihat penginapan terdekat di sekitarmu 
-          </p>
-          <div className='my-20 h-[30rem] flex justify-start items-stretch gap-6  ' > 
-            {
-              _.map(terbaik,(e) => (
-                <Best image={e.img} title={e.title} des={e.des} />
-              ))
-            }
-
-          </div>
-
-      </div>
+      
 
 
       {/* footer */}
@@ -271,7 +255,7 @@ function Porto() {
         backgroundSize: 'cover',
         backgroundPosition: '100% 80%'
       }} >
-        <div className='w-full h-full p-14 ' >
+        <div className='w-full h-full p-14 bg-teal-400 opacity-70 ' >
 
         </div>
 
